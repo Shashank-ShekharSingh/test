@@ -1,0 +1,11 @@
+name: Test
+on: 
+    push:
+        branches:
+            - master
+jobs:
+    on_test:
+        runs-on: ubantu-latest
+        steps:
+            - name: 'Print Hello'
+              run: echo"Hello"            
