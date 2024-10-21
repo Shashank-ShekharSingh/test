@@ -1,11 +1,12 @@
-name: "Test"
-on: 
-    push:
-        branches:
-            - master
+name: 'Test'
+on:
+  push:
+    branches:
+      - main
+      - master
 jobs:
-    on_test:
-        runs-on: ubantu-latest
-        steps:
-            - name: 'Print Hello'
-              run: echo"Hello"            
+  on_push:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'Print Hello'
+        run: echo "hello"
